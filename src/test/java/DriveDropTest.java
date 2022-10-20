@@ -12,6 +12,7 @@ public class DriveDropTest {
     void DriveAndDropTest () {
         open("https://the-internet.herokuapp.com/drag_and_drop");
         $("#column-a").dragAndDropTo($("#column-b"));
-        $("column-a").shouldHave(text("b"));
+        $("column-a").shouldHave(text("B"));
+        $("column-b").shouldHave(text("A"));
     }
 }
